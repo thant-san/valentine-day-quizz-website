@@ -1,11 +1,13 @@
+// This file is deprecated. Use /App.tsx instead.
+// Keeping this file for reference only.
 
 import React, { useState, useCallback } from 'react';
-import FloatingHearts from './components/FloatingHearts';
-import QuizCard from './components/QuizCard';
-import ResultsView from './components/ResultsView';
-import { AppState, QuizResult } from './types';
-import { QUIZ_QUESTIONS } from './constants';
-import { generateLoveMessage } from './services/geminiService';
+import FloatingHearts from './FloatingHearts';
+import QuizCard from './QuizCard';
+import ResultsView from './ResultsView';
+import { AppState, QuizResult } from '../types';
+import { QUIZ_QUESTIONS } from '../constants';
+import { generateLoveMessage } from '../geminiService';
 
 const App: React.FC = () => {
   const [appState, setAppState] = useState<AppState>(AppState.HOME);
@@ -121,7 +123,7 @@ const App: React.FC = () => {
 
       {/* Footer Branding */}
       <footer className="absolute bottom-6 text-pink-400 text-xs font-semibold tracking-widest uppercase opacity-60">
-        Happy Valentine's Day 2025
+        Happy Valentine's Day Mai
       </footer>
 
       {/* Custom Global Animations */}

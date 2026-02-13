@@ -118,21 +118,8 @@ const App: React.FC = () => {
       </main>
 
       <footer className="absolute bottom-6 text-pink-400 text-xs font-semibold tracking-widest uppercase opacity-60">
-        Happy Valentine's Day 2025
+        Happy Valentine's Day Mai
       </footer>
-
-      <style>{`
-        @keyframes fade-in {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes scale-in {
-          from { opacity: 0; transform: scale(0.9); }
-          to { opacity: 1; transform: scale(1); }
-        }
-        .animate-fade-in { animation: fade-in 0.8s ease-out forwards; }
-        .animate-scale-in { animation: scale-in 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
-      `}</style>
     </div>
   );
 };

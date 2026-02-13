@@ -11,7 +11,7 @@ export const generateLoveMessage = async (score: number, total: number): Promise
 
   try {
     const response = await ai.models.generateContent({
-      model: 'gemini-3-flash-preview',
+      model: 'gemini-1.5-flash',
       contents: prompt,
       config: {
         temperature: 0.8,
@@ -19,9 +19,9 @@ export const generateLoveMessage = async (score: number, total: number): Promise
       },
     });
 
-    return response.text || "You have my heart forever.";
+    return response.text || 'You have my heart forever.';
   } catch (error) {
     console.error("Error generating love message:", error);
-    return "No matter the score, you are the missing piece to my puzzle.";
+    return "No matter the score, you've earned a special place in my heart.";
   }
 };
